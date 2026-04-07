@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <title>DevOps Demo</title>
@@ -9,5 +9,126 @@
 <body>
   <h1>Welcome to our DevOps Demo ninijui new !</h1>
   <p>This is Version 1.</p>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Live Demo</title>
+  <style>
+    /* Import a cool modern font */
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Grotesk', sans-serif;
+      /* Animated gradient background */
+      background: linear-gradient(-45deg, #0f172a, #1e293b, #312e81, #1e1b4b);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Glass effect card */
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 4rem;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      max-width: 600px;
+      width: 90%;
+    }
+
+    /* Gradient Text for Main Heading */
+    h1 {
+      font-size: 3.5em;
+      margin: 0;
+      background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p.subtitle {
+      color: #94a3b8;
+      font-size: 1.2em;
+      margin-bottom: 2rem;
+    }
+
+    /* Glowing Version Badge */
+    .version-badge {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 15px 35px;
+      font-size: 2em;
+      font-weight: bold;
+      color: #10b981; /* Emerald green */
+      background: rgba(16, 185, 129, 0.1);
+      border: 2px solid #10b981;
+      border-radius: 50px;
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); }
+      50% { box-shadow: 0 0 40px rgba(16, 185, 129, 0.8); }
+      100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); }
+    }
+
+    /* Little UI Pipeline graphic */
+    .pipeline-flow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 40px;
+      font-size: 1em;
+      color: #cbd5e1;
+    }
+
+    .step {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>DevOps Demo</h1>
+    <p class="subtitle">Automated CI/CD Pipeline</p>
+
+    <!-- ========================================== -->
+    <!-- DURING THE DEMO, EDIT THE LINE BELOW!      -->
+    <!-- ========================================== -->
+    <div class="version-badge">Version 1.0</div>
+    <!-- ========================================== -->
+
+    <div class="pipeline-flow">
+      <div class="step">📝 Code</div>
+      <span>➔</span>
+      <div class="step">⚙️ Build</div>
+      <span>➔</span>
+      <div class="step">🚀 Deploy</div>
+    </div>
+  </div>
+
 </body>
 </html>
